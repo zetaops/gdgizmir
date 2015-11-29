@@ -9,6 +9,8 @@
 # (GPLv3).  See LICENSE.txt for details.
 import os.path
 import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 from os import environ
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
