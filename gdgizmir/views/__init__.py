@@ -9,7 +9,7 @@
 
 from zengine.dispatch.dispatcher import receiver
 from zengine.signals import crud_post_save
-
+from gdgizmir.models import *
 
 # faking notify to satisfy frontend
 def notify(current):
@@ -25,3 +25,5 @@ def set_password(sender, *args, **kwargs):
             return # already encrypted, password unchanged
         object.set_password(password)
         object.save()
+
+
