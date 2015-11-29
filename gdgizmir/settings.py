@@ -35,8 +35,8 @@ ANONYMOUS_WORKFLOWS = ['login', ]
 DEFAULT_BUCKET_TYPE = os.environ.get('DEFAULT_BUCKET_TYPE', 'gdg')
 
 # map your non workflow views here
-VIEW_URLS = [
+VIEW_URLS.extend([
     # ('falcon URI template', 'python path to view method/class')
-    ('/menu', 'gdgizmir.views.Menu'),
     ('/notify', 'gdgizmir.views.notify'),
-]
+])
+
